@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class PageHome extends StatelessWidget {
@@ -14,13 +15,11 @@ class PageHome extends StatelessWidget {
               size: 30, color: Color.fromARGB(255, 184, 215, 230)),
           actions: const [
             Icon(Icons.search, size: 20),
-            Icon(Icons.favorite, size: 20),
+            Icon(CupertinoIcons.square_favorites_alt, size: 20),
             Icon(Icons.more_vert, size: 20)
           ]),
       backgroundColor: Color.fromARGB(255, 175, 196, 194),
-      body: const Image(
-          image: NetworkImage(
-              'https://i.pinimg.com/originals/0b/f9/8e/0bf98ec36bd8421f4580e5708a0c9ed7.jpg')),
+      body: const Image(image: AssetImage('assets/images/car.jpg')),
     );
   }
 }
